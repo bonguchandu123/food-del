@@ -1,0 +1,112 @@
+.login-popup{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display:grid;
+}
+.login-popup-container{
+    position: relative;
+    place-self: center;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: FadeIn 0.5s;
+
+}
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+}
+.login-popup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+.login-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-popup-input input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+.login-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+.login-propup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-propup-condition input {
+    content: ✔;
+    border:    1px solid black;
+    padding: 10x;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    
+}
+.login-popup p span {
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 12px;
+
+}
+.btn::after{
+    content: "";
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.btn::before{
+    content: "";
+    background: linear-gradient(45deg, #FF0000,#FF7300,#FFFB00,#48FF00,#00FFD5,#002BFF,#FF00C8,red);
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%,4px);
+    height: calc(100%,4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50%{ background-position: 400% 0;}
+    
+}

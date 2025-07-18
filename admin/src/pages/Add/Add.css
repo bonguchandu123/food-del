@@ -1,0 +1,37 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.add form{
+    gap: 20px;
+}
+.add-img-upload img{
+    width: 120px;
+
+
+}
+.add-pdt-name, .add-pdt-des{
+    width: max(40%,280px);
+}
+.add-pdt-name input, .add-pdt-des textarea{
+    padding: 10px;
+}
+.add-category-price{
+    display: flex;
+    gap: 30px;
+}
+.add-category-price select, .add-category-price input{
+    max-width: 120px;
+    padding: 10px;
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: burlywood;
+    color: blueviolet;
+    cursor: pointer;
+}
